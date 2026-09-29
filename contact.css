@@ -1,0 +1,562 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/************************** 
+      overal 
+***************************/
+.overal{
+    /* background-color: orange; */
+    min-height: 100vh;
+}
+.main{
+    /* background-color: lightblue; */
+    height: 180px;
+    width: 100%;
+    margin-top: 100px;
+}
+/************************** 
+      left box 
+***************************/
+.left{
+    /* background-color: lightgreen; */
+    height: 180px;
+    width: 350px;
+    position: relative;
+    left:0px;
+    overflow: hidden;
+    animation-name: leftbox;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes leftbox{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -230px;
+    }
+}
+/************************** 
+      right box 
+***************************/
+.right{
+    /* background-color: yellow; */
+    height: 180px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    right:0px;
+    animation-name: rightbox;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes rightbox{
+    from{
+        right: 0px;
+    }
+    to{
+        right: -230px; 
+    }
+}
+.head{
+    color: black;
+    font-weight: bold;
+    font-size: 200px;
+}
+/************************** 
+      left side heading  
+***************************/
+.head1{
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+}
+/************************** 
+      right side heading  
+***************************/
+.head2{
+    position: absolute;
+    left: -75px;
+    bottom: -8px;
+}
+/************************** 
+      center box 
+***************************/
+.center{
+    background-color: black;
+    width: 40%;
+    height: 145px;
+    border-radius: 100px;
+    position: absolute;
+    z-index: 1;
+    animation-name: box;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    overflow: hidden;
+}
+@keyframes box{
+    from{
+        width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 41.5%;
+        opacity: 1;
+    }
+}
+/************************** 
+      shoe image 
+***************************/
+.img1{
+    height: 150px;
+    width: 230px;
+    transform: rotate(-10deg);
+    position: relative;
+    top: -150px;
+    left: 100px;
+    animation-name: shoe;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes shoe{
+    from{}
+    to{
+        top: 94px;
+    }
+}
+.p1{
+    width: 80%;
+    border-bottom: 3px solid black;
+}
+/************************** 
+      fotter 
+***************************/
+.fotter{
+    /* background-color: violet; */
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.b1{
+    /* background-color: green; */
+    height: 350px;
+    width: 45%;
+}
+/************************** 
+      video 
+***************************/
+.video1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.head3{
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+    position: relative;
+    top: 40px;
+}
+/************************** 
+      text circle  
+***************************/
+.b2 {
+    width: 300px;
+    height: 300px;
+}
+.b2 text {
+        letter-spacing: 5px;
+        font-size: 25px;
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width:450px) {
+    .img1{
+        left: 0px;
+    }
+    .main{
+        height: 50px;
+    }
+    .head1{
+        font-size: 50px;
+        top: -10px;
+        left: 0px;
+    }
+    .head2{
+        font-size: 50px;
+        top: -10px;
+        left: -20px;
+    }
+    .left{
+        width: 85px;
+        height: 45px;
+    }
+    .right{
+        width: 70px;
+        height: 45px;
+    }
+    @keyframes leftbox{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -70px;
+    }
+}
+@keyframes rightbox{
+    from{
+        right: 0px;
+    }
+    to{
+        right: -70px; 
+    }
+}
+
+.center{
+    width: 0%;
+    height: 45px;
+    margin-left: 15px;
+}
+@keyframes box{
+    from{
+        width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 175px;
+        opacity: 1;
+    }
+}
+.fotter{
+    flex-direction: column;
+}
+.b1{
+    width: 100%;
+    padding: 15px;
+}
+.b2{
+    width: 100%;
+    margin-top: 50px;
+}
+.p2{
+    padding-top: 130px;
+    line-height: 25px;
+}
+.img1{
+    left: 50px;
+    height: 100px;
+    width: 150px;
+}
+
+}
+
+
+
+@media only screen and (min-width:450px) and (max-width:600px) {
+.img1{
+        left: 90px;
+    }
+    .main{
+        height: 80px;
+    }
+    .head1{
+        font-size: 90px;
+        top: -26px;
+        left: 0px;
+    }
+    .head2{
+        font-size: 90px;
+        top: -26px;
+        left: -30px;
+    }
+    .left{
+        width: 155px;
+        height: 100px;
+    }
+    .right{
+        width: 135px;
+        height: 100px;
+    }
+    @keyframes leftbox{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -70px;
+    }
+}
+@keyframes rightbox{
+    from{
+        right: 0px;
+    }
+    to{
+        right: -70px; 
+    }
+}
+
+.center{
+    width: 0%;
+    height: 65px;
+    margin-left: 20px;
+}
+@keyframes box{
+    from{
+        width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 215px;
+        opacity: 1;
+    }
+}
+.fotter{
+    flex-direction: column;
+}
+.b1{
+    width: 100%;
+    padding: 15px;
+}
+.b2{
+    width: 100%;
+}
+.p2{
+    padding-top: 65px;
+}
+}
+
+
+@media only screen and (min-width:600px) and (max-width:750px) {
+    .img1{
+        left: 105px;
+    }
+    .main{
+        height: 80px;
+    }
+    .head1{
+        font-size: 120px;
+        top: -36px;
+        left: 0px;
+    }
+    .head2{
+        font-size: 120px;
+        top: -36px;
+        left: -40px;
+    }
+    .left{
+        width: 205px;
+        height: 120px;
+    }
+    .right{
+        width: 175px;
+        height: 120px;
+    }
+    @keyframes leftbox{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -110px;
+    }
+}
+@keyframes rightbox{
+    from{
+        right: 0px;
+    }
+    to{
+        right: -110px; 
+    }
+}
+
+.center{
+    width: 0%;
+    height: 100px;
+    margin-left: 30px;
+}
+@keyframes box{
+    from{
+        width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 320px;
+        opacity: 1;
+    }
+}
+.fotter{
+    flex-direction: column;
+}
+.b1{
+    width: 100%;
+    padding: 15px;
+    height: 290px;
+}
+.b2{
+    width: 100%;
+}
+.p2{
+    padding-top: 0px;
+}
+}
+
+
+
+@media only screen and (min-width:750px) and (max-width:900px) {
+    .img1{
+        left: 125px;
+    }
+    .main{
+        height: 80px;
+    }
+    .head1{
+        font-size: 150px;
+        top: -45px;
+        left: 0px;
+    }
+    .head2{
+        font-size: 150px;
+        top: -45px;
+        left: -50px;
+    }
+    .left{
+        width: 260px;
+        height: 150px;
+    }
+    .right{
+        width: 235px;
+        height: 150px;
+    }
+    @keyframes leftbox{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -130px;
+    }
+}
+@keyframes rightbox{
+    from{
+        right: 0px;
+    }
+    to{
+        right: -130px; 
+    }
+}
+.p1{
+    margin-top: 50px;
+}
+
+.center{
+    width: 0%;
+    height: 110px;
+    margin-left: 30px;
+}
+@keyframes box{
+    from{
+        width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 380px;
+        opacity: 1;
+    }
+}
+.fotter{
+    flex-direction: column;
+}
+.b1{
+    width: 100%;
+    padding: 15px;
+    height: 230px;
+}
+.b2{
+    width: 100%;
+}
+.p2{
+    padding-top: 0px;
+}
+}
+
+@media only screen and (min-width:900px) and (max-width:1700px) {
+    .img1{
+        left: 145px;
+    }
+    .main{
+        height: 80px;
+    }
+    .head1{
+        font-size: 180px;
+        top: -55px;
+        left: 0px;
+    }
+    .head2{
+        font-size: 180px;
+        top: -55px;
+        left: -70px;
+    }
+    .left{
+        width: 310px;
+        height: 180px;
+    }
+    .right{
+        width: 255px;
+        height: 180px;
+    }
+    @keyframes leftbox{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -165px;
+    }
+}
+@keyframes rightbox{
+    from{
+        right: 0px;
+    }
+    to{
+        right: -165px; 
+    }
+}
+.p1{
+    margin-top: 90px;
+}
+
+.center{
+    width: 0%;
+    height: 131px;
+    margin-left: 53px;
+}
+@keyframes box{
+    from{
+        width: 0px;
+        opacity: 1;
+    }
+    to{
+        width: 470px;
+        opacity: 1;
+    }
+}
+.fotter{
+    flex-direction: column;
+}
+.b1{
+    width: 100%;
+    padding: 15px;
+    height: 195px;
+}
+.b2{
+    width: 100%;
+}
+.p2{
+    padding-top: 0px;
+}
+}
